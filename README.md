@@ -4,10 +4,10 @@
 1. `alphafold_fast.sh` Nothing to worry about for this script
 2. `pred_gpu112.sh` For a node that uses cuda 11. 
 modify only two things
- - `#SBATCH -J jobname`
+ - Line 4: `#SBATCH -J jobname`
  jobname should be the name of your fasta file. Note that the fasta file must end with ".fasta"
  
- - `model="multimer"`
+ - Line 30: `model="multimer"`
  choose between multimer or monomer
  
  3. "Your.fasta" file
